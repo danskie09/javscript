@@ -1,13 +1,12 @@
-let num1 = 30;
+function myBtn() {
+    let name = prompt("What is ur name")
+    if (name) {
+        alert("Hello" + name)
 
-let num2 = 30;
+    }
 
+    else {
+        alert("You did not input a name")
+    }
 
-let result = num1 + num2;
-
-
-
-
-console.log("The answer is :: " + result)
-
-
+}
