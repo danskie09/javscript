@@ -1,10 +1,13 @@
-let name = "Daniel";
+let num1 = 30;
 
-let age = 21;
-
-let isStudying = true;
+let num2 = 30;
 
 
-console.log(name);
-console.log(age);
-console.log(isStudying);
+let result = num1 + num2;
+
+
+
+
+console.log("The answer is :: " + result)
+
+
