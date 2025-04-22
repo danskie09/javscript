@@ -1,23 +1,23 @@
-
-
-
-
 function calculate() {
+    let length = parseFloat(document.getElementById("length").value)
 
-    let cel = parseFloat(document.getElementById("cel").value)
-    
-    if (isNaN(cel)) {
+    let width = parseFloat(document.getElementById("width").value)
 
-        let result = document.getElementById("result").innerHTML = "Not a valid number"
-    
-    
+
+    if (isNaN(length && width)) {
+        alert("Please enter valid numbers " + length + " "+ width + "are not valid numbers")
     }
+
     else {
-        let far = (cel * 9 / 5) + 32
-    let result = document.getElementById("result").innerHTML = far + " degrees farenheit"
+        let area = length * width
+
+
+        alert("The area of a rectangle is " + area)
     }
-    
-    
-
-
 }
+
+
+
+
+
+

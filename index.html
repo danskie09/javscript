@@ -19,22 +19,34 @@
 <body class="bg-white">
 
 
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="card p-4 shadow-lg " style="max-width: 500px;">
+    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+
+        <div class="card shadow-sm py-4 px-4" style="max-width: 500px">
+
+            <h1 class="text text-primary text-center mb-2">Area of a Rectangle Calculator</h1>
+
+            <input type="text" id="length" class="form-control mb-2" placeholder="Input length">
+
+            <input type="text" id="width" class="form-control mb-4" placeholder="Input Width">
 
 
-            <h1 class="text-primary mb-4 pt-2">Temperature Conversion</h1>
-
-            <input type="text" class="form-control mb-2 " id="cel" placeholder="Please input celcius here">
-            <button class="btn btn-primary mb-2 mt-2" id="submit" onclick="calculate()">Calculate</button>
+            <button class="btn btn-primary" onclick="calculate()">Calculate</button>
 
 
-            <p class="text text-success text-center" id="result">Nothing</p>
+
+
 
 
         </div>
 
+
+
+
     </div>
+
+
+
+
 
 
     <script src="index.js"></script>
