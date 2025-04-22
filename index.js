@@ -1,11 +1,14 @@
-let num = 300
+let num = -2
 
 
-if (num % 2 === 0 ) {
-    console.log("its even")
+
+if (num > 0) {
+
+    console.log(num + " is a positive number")
     
+
 }
 
 else {
-    console.log("its odd")
+    console.log(num + " is a negative number")
 }
