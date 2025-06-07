@@ -1,9 +1,24 @@
-let multiple = 10
+const musicPlaylist = [
+  "Tom Sawyer",
+  "Sabotage",
+  "I Wanna Dance With Somebody",
+  "Don't Speak",
+  "Bulls On Parade",
+  "Thriller",
+  "The Breaks",
+  "Brick",
+  "Aeroplane Over the Sea",
+  "Tubthumping"
+];
 
 
-let numbers = [0,1,2,3,4,5,6,7,8,9]
 
-for(let i = 0; i < numbers.length; i++){
-    console.log(`${multiple} x ${numbers[i]} = ${multiple * numbers[i]}`)
+musicPlaylist.shift()
+musicPlaylist.pop()
 
-}
+musicPlaylist.push("Magbalik")
+musicPlaylist.unshift("Magpakailanaman", "Sana Nga")
+
+
+
+console.log(musicPlaylist)
