@@ -1,14 +1,27 @@
-let num = -2
 
 
 
-if (num > 0) {
+function fizzbuzz(input){
+    if(input % 3 === 0 && input % 5 === 0){
 
-    console.log(num + " is a positive number")
-    
+        console.log('Fizz Buzz')
 
+
+    }
+
+    else if (input % 3 === 0){
+
+        console.log('Fizz')
+
+
+    }
+
+    else if (input % 5 === 0){
+        console.log('Buzz')
+
+
+    }
 }
 
-else {
-    console.log(num + " is a negative number")
-}
+
+fizzbuzz(3)
