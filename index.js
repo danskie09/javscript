@@ -1,24 +1,17 @@
-const musicPlaylist = [
-  "Tom Sawyer",
-  "Sabotage",
-  "I Wanna Dance With Somebody",
-  "Don't Speak",
-  "Bulls On Parade",
-  "Thriller",
-  "The Breaks",
-  "Brick",
-  "Aeroplane Over the Sea",
-  "Tubthumping"
+const characters = [
+  "The Wally Watchers",
+  "Wilma",
+  "Fritz",
+  "Wizard Whitebeard",
+  "Odlaw",
+  "Waldo",
+  "Woof"
 ];
 
 
-
-musicPlaylist.shift()
-musicPlaylist.pop()
-
-musicPlaylist.push("Magbalik")
-musicPlaylist.unshift("Magpakailanaman", "Sana Nga")
-
-
-
-console.log(musicPlaylist)
+if(characters.includes("Waldo")){
+  console.log("Found Waldo at index of "+characters.indexOf("Waldo"))
+}
+else{
+  console.log('Nothing Found')
+}
