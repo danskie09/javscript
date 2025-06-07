@@ -2,26 +2,30 @@
 
 
 function fizzbuzz(input){
-    if(input % 3 === 0 && input % 5 === 0){
+    for(let i = 0; i <= input; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('Fizz buzz')
 
-        console.log('Fizz Buzz')
+        }
+        else if(i % 3 === 0 ){
+            console.log('Fizz ')
 
+        }
 
-    }
+        else if(i % 5 === 0){
+            console.log('Buzz')
 
-    else if (input % 3 === 0){
+        }
 
-        console.log('Fizz')
+        else{
+            console.log(i)
+        }
 
-
-    }
-
-    else if (input % 5 === 0){
-        console.log('Buzz')
-
+   
+        
 
     }
 }
 
 
-fizzbuzz(3)
+fizzbuzz(10)
