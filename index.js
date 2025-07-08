@@ -1,17 +1,19 @@
-const characters = [
-  "The Wally Watchers",
-  "Wilma",
-  "Fritz",
-  "Wizard Whitebeard",
-  "Odlaw",
-  "Waldo",
-  "Woof"
-];
+const dnaPieces = ["A", "C", "G", "T"];
 
+let DNA = []
 
-if(characters.includes("Waldo")){
-  console.log("Found Waldo at index of "+characters.indexOf("Waldo"))
+function myDNA(){
+    for(let i = 0; i < 24 ; i++){
+        let pieceOne = dnaPieces[Math.floor(Math.random() * dnaPieces.length)]
+        let pieceTwo = dnaPieces[Math.floor(Math.random() * dnaPieces.length)]
+        let pieceThree = dnaPieces[Math.floor(Math.random() * dnaPieces.length)]
+
+        let string = pieceOne + pieceTwo + pieceThree
+
+        DNA.push(string)
+   }
 }
-else{
-  console.log('Nothing Found')
-}
+
+myDNA()
+
+console.log(DNA)
