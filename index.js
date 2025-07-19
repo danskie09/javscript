@@ -17,3 +17,6 @@ function myDNA(){
 myDNA()
 
 console.log(DNA)
+
+
+
