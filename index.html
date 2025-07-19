@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="styles.css" rel="stylesheet" />
-  <title>Hotline Bling</title>
-
-  <style>
+  <link rel="stylesheet" href="styles.css">
+<title>Mood Ring</title>
+<style>
     body {
-  background-color: #d7ba19;
+  text-align: center;
 }
 
-#wrapper {
-  width: 75%;
-  margin: auto;
-}
-
-div {
-  width: 75%;
-  margin: auto;
-}
-
-h1 {
-  display: inline;
+.mood-ring {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border: 15px solid #ccc;
+  border-radius: 50%;
   position: relative;
-  bottom: 4em;
 }
-  </style>
+
+.stone {
+  width: 125px;
+  height: 125px;
+  background-color: #3498db; /* Default color */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.5s ease-in-out;
+}
+</style>
 </head>
 <body>
-  <div id="wrapper">
-    <div>
-      <img width="450" id="drake-pic-1" src="https://i.imgur.com/1YQsiOq.png" />
-      <h1 id="heading-1">Watch and Learn</h1>
-    </div>
-    <div>
-      <img width="450" id="drake-pic-2" src="https://i.imgur.com/1YQsiOq.png" />
-      <h1 id="heading-2">Watch and Learn</h1>
-    </div>
+  <div class="mood-ring" id="moodRing">
+    <div class="stone" id="stone"></div>
   </div>
+  <h1>How Are You Feeling?</h1>
   <script>
 
-    let drakePicTwo = document.getElementById("drake-pic-2").src = "https://i.imgur.com/RGbh6zY.png"
-
-    let heading = document.getElementById("heading-2").innerText = "Learn By Doing";
+    let stone = document.getElementById("stone");
 
 
+    let rand = Math.floor(Math.random() * 9) + 1;
+    
+    console.log(rand)
+
+    if(rand == 5){
+        stone.style.backgroundColor = "red"
+    }
+    else {
+        stone.style.backgroundColor = "yellow"
+    }
 
   </script>
 </body>
