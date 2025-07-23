@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Cap That</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #generator-button {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+
+      #meme-wrapper {
+        border: 4px solid black;
+        width: 700px;
+        height: 500px;
+        padding: 5px;
+        margin: 15px auto;
+      }
+
+      #random-meme {
+        border-radius: 5px;
+      }
+
+      #random-caption {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Meme Machine</h1>
+    <button id="generator-button">Generate Meme</button>
+    <div id="meme-wrapper">
+      <img width="600" height="400" id="random-meme" src="" />
+      <h2 id="random-caption"></h2>
+    </div>
+    <script>
+      const memeArray = [
+        "https://i.imgur.com/bSi4xLb.png",
+        "https://i.imgur.com/6y0G7N0.png",
+        "https://i.imgur.com/LXnRao1.png",
+        "https://i.imgur.com/Qqoxh1N.png",
+      ];
+
+      const captionArray = [
+        "What the hellly",
+        "Bro Holdap",
+        "Wazzup mananap",
+        "HAHAHA Funny",
+        "Where is the Good",
+        "So Funny",
+        "What Bro"
+      ];
+
+
+      let randomMeme = document.getElementById("random-meme")
+      let randomCaption = document.getElementById("random-caption")
+      let generatorBtn = document.getElementById("generator-button")
+
+
+      generatorBtn.addEventListener("click", function(){
+        let rand1 = Math.floor(Math.random() * memeArray.length)
+        let rand2 = Math.floor(Math.random() * captionArray.length)
+
+
+        randomMeme.src = memeArray[rand1]
+        randomCaption.innerText = captionArray[rand2]
+
+
+      })
+
+    </script>
+  </body>
+</html>
