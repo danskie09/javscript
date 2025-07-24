@@ -104,3 +104,30 @@
 
 
 // console.log(vowelCount("orangee"))
+
+
+
+// Removes Duplicates in an array
+// function remove(arr){
+   
+//     const filtered = [... new Set(arr)];
+//     return filtered;
+// }
+
+// console.log(remove([1,2,2,1,4,5]))
+
+
+
+// Capitalize every word
+function capitalized(word){
+    
+
+    let char = word.charAt(0).toUpperCase();
+    let rest = word.slice(1)
+    
+
+
+    return char + rest;
+}
+
+console.log(capitalized("hey jude dont let me"))
