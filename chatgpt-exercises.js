@@ -82,3 +82,25 @@
 
 
 //Count Vowels
+
+// function vowelCount(word){
+//     let char = word.split("")
+//     let vowels = ["a","e","i","o","u"]
+//     let count = 0;
+//     for(let i = 0; i < vowels.length; i++){
+//       if(char.includes(vowels[i])){
+//         count++
+      
+      
+//        }
+
+//     }
+
+
+
+
+//     return count;
+// }
+
+
+// console.log(vowelCount("orange"))
