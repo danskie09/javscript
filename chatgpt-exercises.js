@@ -119,15 +119,18 @@
 
 
 // Capitalize every word
-function capitalized(word){
+// function capitalized(word){
     
 
-    let char = word.charAt(0).toUpperCase();
-    let rest = word.slice(1)
+//     let char = word.charAt(0).toUpperCase();
+//     let rest = word.slice(1)
     
 
 
-    return char + rest;
-}
+//     return char + rest;
+// }
 
-console.log(capitalized("hey jude dont let me"))
+// console.log(capitalized("hey jude dont let me"))
+
+
+
